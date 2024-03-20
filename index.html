@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <style>
+      body {
+        background-color: #05c46b;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .form_heading {
+        font-size: larger;
+        text-align: center;
+      }
+      .Form {
+        background-color: white;
+        padding: 20px 20px;
+        max-width: 500px;
+        margin: 20px auto;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+      .form_control {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+      .form_control label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .form_control select,
+      .form_control textarea,
+      .form_control input {
+        display: block;
+        width: 95%;
+        padding: 10px;
+      }
+      input[type="radio"], input[type="checkbox"]
+        {
+            display: inline-block;
+            width: auto;
+        }
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Heading -->
+    <div class="form_heading">
+      <h1>Survey Form</h1>
+    </div>
+    <div class="Form">
+      <form action="post">
+        <div class="form_control">
+          <label for="Username">Name</label>
+          <input
+            type="text"
+            name="Username"
+            id="Username"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form_control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form_control">
+          <label for="age">Age</label>
+          <input
+            type="Number"
+            name="age"
+            id="age"
+            placeholder="Enter your age"
+          />
+        </div>
+        <div class="form_control">
+          <label for="occuption">Which option best describes you?</label>
+          <select name="Student" id="occuption">
+            <option value="Student">Student</option>
+            <option value="Student">Intern</option>
+            <option value="Student">Professional</option>
+            <option value="Student">Other</option>
+          </select>
+        </div>
+        <div class="form_control">
+          <label for="reference"
+            >Would you recommend GeeksforGeeks to a friend?</label
+          >
+          <label for="reference_yes"
+            ><input
+              type="radio"
+              name="reference"
+              id="reference_yes"
+              value="Yes"
+            />Yes</label
+          >
+
+          <label for="reference_no"
+            ><input
+              type="radio"
+              name="reference"
+              id="reference_no"
+              value="No"
+            />No</label
+          >
+
+          <label for="reference_maybe"
+            ><input
+              type="radio"
+              name="reference"
+              id="reference_maybe"
+              value="Maybe"
+            />Maybe
+          </label>
+        </div>
+        
+        <div class="form_control">
+          <label for="Languages"
+            >Languages and Frameworks known (Check all that apply)</label
+          >
+
+          <label for="Languages_C"
+            ><input type="checkbox" name="Languages" id="Languages_C" />C</input>
+            </label
+          >
+
+          <label for="Languages_C++"
+            ><input
+              type="checkbox"
+              name="Languages"
+              id="Languages_C++"
+            />C++</label
+          >
+
+          <label for="Languages_Java"
+            ><input
+              type="checkbox"
+              name="Languages"
+              id="Languages_Java"
+            />Java</label
+          >
+
+          <label for="Languages_Javascript"
+            ><input
+              type="checkbox"
+              name="Languages"
+              id="Languages_Javascript"
+            />Javascript</label
+          >
+
+          <label for="Languages_angular"
+            ><input
+              type="checkbox"
+              name="Languages"
+              id="Languages_angular"
+            />Angular</label
+          >
+        </div>
+        <div class="form_control">
+          <label for="suggestions">Any suggestions</label>
+          <textarea
+            name="suggestions"
+            id="suggestions"
+            cols="20"
+            rows="8"
+          ></textarea>
+        </div>
+        <div class="form_control">
+          <button>
+            <label for="button">Submit</label>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
